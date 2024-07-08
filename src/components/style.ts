@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export const STEP_NUMBER_RADIUS: number = 14;
 export const STEP_NUMBER_DIAMETER: number = STEP_NUMBER_RADIUS * 2;
@@ -29,7 +29,9 @@ export const styles = StyleSheet.create({
     borderRadius: 3,
     overflow: "hidden",
   },
-  tooltipText: {},
+  tooltipText: {
+    fontFamily: Platform.OS === "ios" ? "Helvetica" : "serif"
+  },
   tooltipContainer: {
     flex: 1,
   },
@@ -47,18 +49,20 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: STEP_NUMBER_RADIUS,
     borderColor: "#FFFFFF",
-    backgroundColor: "#27ae60",
+    backgroundColor: "#1D2D44",
   },
   stepNumberText: {
     fontSize: 10,
     backgroundColor: "transparent",
     color: "#FFFFFF",
+    fontFamily: Platform.OS === "ios" ? "Courier New" : "monospace",
   },
   button: {
     padding: 10,
   },
   buttonText: {
-    color: "#27ae60",
+    color: "#1D2D44",
+		fontWeight: "bold"
   },
   bottomBar: {
     marginTop: 10,
