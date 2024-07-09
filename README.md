@@ -15,5 +15,5 @@
 </div>
 
 <p align="center">
-  A custom fork of <a href="https://github.com/mohebifar/react-native-copilot">`react-native-copilot`</a> customized with much better looks (mostly fonts), and colors that fit my own use case.
+  A custom fork of <code><a href="https://github.com/mohebifar/react-native-copilot">react-native-copilot</a></code> customized with much better looks (mostly fonts), and colors that fit my own use case.
 </p>
